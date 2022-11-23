@@ -61,3 +61,47 @@ footer {
 small {
   color: #7A7B6F;
 }
+
+.about-all {
+  background-image: url(../images/about_back.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 70%;
+  position: relative;
+  z-index: 1;
+}
+
+.about-all::after{
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.row {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+ 
+  .about-contents {
+    text-align: center;
+  }
+
+  .sp {
+    display: block;
+  }
+  
+}
